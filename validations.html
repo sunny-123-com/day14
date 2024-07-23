@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register Form</h1>
+    <form action="../Day-13/login3.html" method="post">
+        <fieldset>
+            <legend>register</legend>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" pattern="[a-z]{3,7}" required><br>
+        <label for="ph no">Phone number</label>
+        <input type="text" id="phone number" name="phone number" pattern="\+91[6-9]\d{9}" required><br>
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password" pattern="(?=.*[a-z])+(?=.*[A-Z])+(?=.*[0-9])+(?=.*[@#%&]).{8,16}" required><br>
+       <label for="email">Email</label>
+       <input type="text" id="email" name="email" pattern="[a-z\d._]+@[a-z]+\.[a-z]{2,10}" required><br>
+       <label for="dob">DOB</label>
+       <input type="text" id="dob" name="dob" pattern="\d{2}-\d{2}-\d{4}" required><br>
+      <label for="states">States</label>
+       <select name="states" id="states">
+        <option value="hyd">hyd</option>
+        <option value="Maharasta">Maharasta</option>
+        <option value="srilankaa">srilanka</option>
+        <option value="Kerala">kerala</option>
+        <option value="UP">UP</option>
+
+       </select><br>
+       <label for="city">City</label>
+       <select name="city" id="city">
+        <option value="warangal">warngal</option>
+        <option value="Hanumakonda">Hanumakonda</option>
+        <option value="kphb">kphb</option>
+        <option value="uppal">uppal</option>
+       </select>
+       <input type="submit" value="submit">
+
+
+    </form>
+
+    
+</body>
+</html>
